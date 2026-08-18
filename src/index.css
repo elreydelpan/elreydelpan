@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 60 20% 96%;
+    --card: 0 0% 8%;
+    --card-foreground: 60 20% 96%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 60 20% 96%;
+    --primary: 68 90% 53%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 60 20% 96%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 62%;
+    --accent: 68 90% 53%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 18%;
+    --input: 0 0% 22%;
+    --ring: 68 90% 53%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+  .font-display {
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-lima {
+    color: #c8f31d;
+  }
+  .bg-lima {
+    background-color: #c8f31d;
+  }
+  .border-lima {
+    border-color: #c8f31d;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1.5px #c8f31d;
+    color: transparent;
+  }
+}
